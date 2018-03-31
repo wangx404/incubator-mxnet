@@ -122,7 +122,7 @@ def demo_net(predictor, image_name, vis=False):
 
     # print results
     logger.info('---class---')
-    logger.info('[[x1, x2, y1, y2, confidence]]')
+    logger.info('[[x1, y1, x2, y2, confidence]]')
     for ind, boxes in enumerate(boxes_this_image):
         if len(boxes) > 0:
             logger.info('---%s---' % CLASSES[ind])
